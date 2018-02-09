@@ -1,0 +1,39 @@
+package prelab;
+
+public class prelab2lecture {
+	
+	public static void main(String[] args) {
+		double theta = (.785); //radians
+		double initialVelocity = (10.0); //ms^-1
+		double time = (1); //seconds
+		double acceleration = (9/8); //ms^-2
+		
+	}
+	
+	public static double yInitialVelocity(double theta, double initialVelocity)	{
+		double sinOfTheta = initialVelocity * Math.sin(theta);
+		System.out.println(sinOfTheta);
+		return sinOfTheta;
+		
+	}
+	
+	public static double xInitialVelocity(double theta, double initialVelocity)	{
+		double cosOfTheta = initialVelocity * Math.cos(theta);
+		System.out.println(cosOfTheta);
+		return cosOfTheta;
+		
+	}
+	
+	public static double xDisplacment (double xInitialVelocity, double time) {
+		double distX = xInitialVelocity * time;
+		System.out.println(distX);
+		return distX;
+	}
+	
+	public static double yDisplacement (double yInitialVelocity, double time, double acceleration)	{
+		double distY = yInitialVelocity * time - .5*acceleration*time*time;
+		System.out.println(distY);
+		return distY;
+		
+	}
+}
